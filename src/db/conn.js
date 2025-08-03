@@ -5,6 +5,8 @@
 // db.once('open',()=>{
 //     console.log("Mongodb connection successful")
 // })
+const mongoose = require('mongoose');
+
 require('dotenv').config();
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
